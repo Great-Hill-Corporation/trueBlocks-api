@@ -1,0 +1,27 @@
+{
+  "name": "trueblocks-api",
+  "version": "0.0.1",
+  "description": "API for addresses per block.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Great-Hill-Corporation/trueblocks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Great-Hill-Corporation/trueblocks/issues"
+  },
+  "homepage": "https://github.com/Great-Hill-Corporation/trueblocks#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
