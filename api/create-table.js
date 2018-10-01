@@ -8,7 +8,8 @@ const sql = `
       tx_index INTEGER,
       trace_id INTEGER,
       address VARCHAR(42) NOT NULL,
-      reason VARCHAR(255) NOT NULL
+      reason VARCHAR(255) NOT NULL,
+      proof VARCHAR(36)
       )`
 
 connection.run(sql);
