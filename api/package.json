@@ -4,7 +4,8 @@
   "description": "API for addresses per block.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "createdb": "node create-table.js"
   },
   "repository": {
     "type": "git",
