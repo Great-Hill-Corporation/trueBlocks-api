@@ -7,6 +7,7 @@ const connection = new AppDAO('./database.sqlite3');
 const port = 8000;
 
 app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 require('./routes')(app, connection);
 
