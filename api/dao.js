@@ -30,8 +30,7 @@ class AppDAO {
     return new Promise((resolve, reject) => {
       this.db.run(sql, params, (err, data) => {
         if (err) {
-          console.log('Error running sql ' + sql)
-          console.log(err)
+          console.log(`Error running sql:\n\tsql: ${sql}\n\tparams: ${JSON.stringify(params)}\n\terr: ${err}`)
           reject(err)
         } else {
           resolve(data)
