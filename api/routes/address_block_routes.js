@@ -16,13 +16,13 @@ module.exports = function(app, db) {
   }
 
   app.get('/', (request, response) => {
-    db.all(`SELECT * FROM block_address ORDER BY block_number`).then((result) => {
+    db.all(`SELECT * FROM block_address ORDER BY block_number LIMIT 500`).then((result) => {
       handleGet(request, result, response);
     })
   });
 
   app.get('/address/:address', (request, response) => {
-    db.all(`SELECT * FROM block_address WHERE address = '${request.params.address}  ORDER BY block_number'`).then((result) => {
+    db.all(`SELECT * FROM block_address WHERE address = '${request.params.address}' ORDER BY block_number`).then((result) => {
       handleGet(request, result, response);
     })
   });
